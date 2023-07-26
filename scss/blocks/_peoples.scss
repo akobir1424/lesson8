@@ -1,0 +1,90 @@
+.main__peoples {
+  margin-top: 60px !important;
+  h4 {
+    font-size: 36px;
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    span {
+      display: flex;
+      .hide {
+        margin-right: 20px;
+        display: none;
+      }
+      i {
+        width: 37px;
+        height: 37px;
+        border-radius: 50%;
+        font-size: 15px;
+        border: 1px solid grey;
+        display: flex;
+        color: grey;
+        justify-content: center;
+        align-items: center;
+        margin-left: 12px;
+      }
+    }
+  }
+  &-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-card {
+    border-radius: 50px;
+    border: 0.5px solid #000;
+    text-align: center;
+    padding: 0 20px 0 20px;
+    img {
+      margin-top: 9px;
+      margin-bottom: 24px;
+    }
+    p {
+      margin-bottom: 24px;
+      font-weight: 600;
+    }
+    span {
+      display: inline-block;
+      margin-bottom: 44px;
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .main__peoples {
+    width: 100% !important;
+    h4 {
+      font-size: 18px;
+      justify-content: space-around;
+      span {
+        .hide {
+          display: inline-flex;
+        }
+      }
+    }
+    &-cards {
+      width: 100%;
+      justify-content: space-around;
+      .hide {
+        display: none;
+      }
+    }
+    &-card {
+      padding: 0 10px 22px 10px;
+      width: 150px;
+      border-radius: 25px;
+      img {
+        width: 50px;
+        margin-top: 5px;
+        margin-bottom: 12px;
+      }
+      p {
+        font-size: 8px;
+        margin-bottom: 12px;
+      }
+      span {
+        font-size: 7.17px;
+        margin-bottom: 0;
+      }
+    }
+  }
+}

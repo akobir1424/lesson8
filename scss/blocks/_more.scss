@@ -1,0 +1,66 @@
+@import "../variables";
+.mani__more {
+  margin-top: 60px;
+  background-image: $linear,
+    url("../../img/modern-tall-glass-buildings-downtown\ 1.png");
+  padding: 90px 77px 213px 121px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  &-text {
+    h3 {
+      color: #fff;
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+    p {
+      color: #fff;
+      font-size: 32px;
+      line-height: 121%;
+    }
+    div {
+      display: flex;
+      justify-content: end;
+      button {
+        @include globalbtn();
+        width: 329px;
+        margin-top: 57px;
+        display: inline-block;
+        height: 85px;
+        font-size: 25px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .mani__more {
+    width: 100% !important;
+    padding: 24px 46px 30px 20px;
+    text-align-last: left !important;
+    background-size: cover;
+    &-text {
+      h3 {
+        font-size: 32px;
+        width: 100% !important;
+      }
+      p {
+        font-size: 12px;
+      }
+      div {
+        justify-content: center;
+        button {
+          width: 160px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 45px;
+          font-size: 12px;
+          margin-top: 219px;
+          &:hover {
+            font-size: 11px;
+          }
+        }
+      }
+    }
+  }
+}

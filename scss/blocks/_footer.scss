@@ -1,0 +1,129 @@
+.footer {
+  background-color: #000;
+  color: #fff;
+  margin-top: 60px;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    &-contact {
+      width: 40%;
+      img {
+        margin-top: 9px;
+      }
+      h5 {
+        font-size: 20px;
+        font-weight: 500;
+        margin-left: 25px;
+        margin-top: 10px;
+      }
+      p {
+        font-size: 12px;
+        margin-left: 25px;
+        font-weight: 400;
+        line-height: 226%;
+        margin-top: 21px;
+        margin-bottom: 30px;
+      }
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &-list {
+      list-style: none;
+      margin-top: 24px;
+      li {
+        a {
+          text-decoration: none;
+          color: #fff;
+          font-size: 12px;
+          line-height: 212.9%;
+        }
+        .link1 {
+          color: #fff;
+          font-size: 20px;
+          margin-bottom: 10px !important;
+          font-weight: 500;
+        }
+      }
+    }
+    &-social {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-end;
+      & > i {
+        margin-top: 22px;
+        width: 22px;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        display: flex;
+        font-size: 10px;
+        justify-content: center;
+        align-items: center;
+        height: 22px;
+      }
+      div {
+        i {
+          font-size: 36px;
+          margin-bottom: 10px;
+          &:first-child {
+            margin-left: 35px;
+          }
+        }
+        p {
+          font-size: 20px;
+          font-weight: 500;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+  & > p {
+    font-size: 12px;
+    padding: 22px 0;
+    width: 20%;
+    text-align: right;
+  }
+}
+@media screen and (max-width: 400px) {
+  .footer {
+    width: 100% !important;
+    display: block;
+    &__wrapper {
+      width: 100% !important;
+      flex-direction: column;
+      padding-left: 16px;
+      &-contact {
+        h5 {
+          margin-left: 16px;
+        }
+        p {
+          margin-left: 16px;
+          margin-bottom: 0;
+        }
+        flex-direction: column;
+      }
+      &-list {
+        margin-left: 16px;
+        margin-top: 0 !important;
+      }
+    }
+    &__wrapper-social {
+      padding-left: 16px;
+      align-items: start;
+      & > i {
+        display: none;
+      }
+      .icons {
+        i {
+          &:first-child {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+    & > p {
+      width: 42%;
+    }
+  }
+}
